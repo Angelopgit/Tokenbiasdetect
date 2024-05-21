@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bias Detection Result</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      padding: 20px;
+    }
+
+    h1, h2 {
+      color: #333;
+      text-align: center;
+    }
+
+    .text-container {
+      max-width: 600px;
+      margin: 20px auto;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    p {
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+      height: auto;
+      margin: 0 auto 20px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+  </style>
+</head>
+<body>
+  <h1>Result</h1>
+  <div class="text-container">
+    <p>Input Text 1: {{ texts[0] }}</p>
+  </div>
+  <div class="text-container">
+    <p>Input Text 2: {{ texts[1] }}</p>
+  </div>
+  <h2>Count of Biased Tokens Detected</h2>
+  {% if img_base64 %}
+    <img src="data:image/png;base64,{{ img_base64 }}" alt="Bias Chart">
+  {% else %}
+    <p>No image available</p>
+  {% endif %}
+  <h2>Gridded Data of Z</h2>
+  {% if img_grid_base64 %}
+    <img src="data:image/png;base64,{{ img_grid_base64 }}" alt="Gridded Data of Z">
+  {% else %}
+    <p>No gridded data available</p>
+  {% endif %}
+</body>
+</html>
