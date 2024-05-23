@@ -1,4 +1,6 @@
-﻿# Tokenbiasdetect
+Originally used Pytorch, Switched to Tensorflow for dependencies prerequisites.
+ 
+ # Tokenbiasdetect
 TokenBiasDetect: A Python Project for Bias Detection
 TokenBiasDetect is my personal first Python project designed to analyze and visualize bias in textual data. The project features a user-friendly local webpage where users can input two different texts and receive a graphical representation of the probability levels of bias present in the texts.
 
